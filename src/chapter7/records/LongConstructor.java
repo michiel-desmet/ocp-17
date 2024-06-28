@@ -1,4 +1,4 @@
-package chapter8.records;
+package chapter7.records;
 
 public record LongConstructor(int number, String name) {
 

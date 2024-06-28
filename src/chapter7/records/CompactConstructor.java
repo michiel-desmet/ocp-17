@@ -1,4 +1,4 @@
-package chapter8.records;
+package chapter7.records;
 
 public record CompactConstructor(int number, String name) {
     public CompactConstructor {
