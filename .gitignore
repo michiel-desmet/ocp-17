@@ -5,12 +5,5 @@ out/
 ocp-17.iml
 .idea
 
-feeding/feeding.iml
-feeding/out
-feeding/zoo/
-feeding/module-info.class
-
-care/care.iml
-care/out
-care/zoo/
-care/module-info.class
+*.iml
+modules/**/.iml
