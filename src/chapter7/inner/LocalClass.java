@@ -5,7 +5,7 @@ package chapter7.inner;
  */
 public class LocalClass {
 
-    private int length = 5;
+    private final int length = 5;
 
     public void calculate() {
         final int width = 20;
@@ -24,4 +24,5 @@ public class LocalClass {
         var localClass = new LocalClass();
         localClass.calculate();
     }
+
 }

@@ -7,7 +7,7 @@ public class InnerClass {
         this.greeting = greeting;
     }
 
-    public InnerClass(){
+    public InnerClass() {
         this("hi!");
     }
 

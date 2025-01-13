@@ -44,6 +44,12 @@ Dus het is niet mogelijk om een `int[]` en `String[]` te vergelijken, dat compil
 - for strings/characters, numbers are smaller than letters.
 - for strings/characters, uppercase is smaller than lowercase
 
+### Sorting in natural order
+- numbers
+- uppercase
+- lowercase
+- null
+
 ### Voorbeelden
 
 | First array       | Second array       | Result   | Reason                                                       |
