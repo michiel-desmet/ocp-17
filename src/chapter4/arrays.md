@@ -18,11 +18,11 @@ import java.util.Arrays;
 class Example {
     public static void main(String[] args) {
         int[] numbers = {2, 4, 6, 8};
-        Arrays.binarySearch(numbers, 2); // 0
-        Arrays.binarySearch(numbers, 4); // 1
-        Arrays.binarySearch(numbers, 1); // -1 (moet op index 1 komen)
-        Arrays.binarySearch(numbers, 3); // -2 
-        Arrays.binarySearch(numbers, 9); // -5
+        System.out.println(Arrays.binarySearch(numbers, 2)); // 0
+        System.out.println(Arrays.binarySearch(numbers, 4)); // 1
+        System.out.println(Arrays.binarySearch(numbers, 1)); // -1 (moet op index 1 komen)
+        System.out.println(Arrays.binarySearch(numbers, 3)); // -2 
+        System.out.println(Arrays.binarySearch(numbers, 9)); // -5
     }
 }
 ```
@@ -32,9 +32,9 @@ class Example {
 Volgende regels moet je uit je hoofd leren. Belangrijk om te weten, je kan niet 2 verschillende typen array vergelijken.
 Dus het is niet mogelijk om een `int[]` en `String[]` te vergelijken, dat compileert niet.
 
-- a negative number means the first array is smaller than the second.
-- a zero means arrays are equal
-- a positive number means the first array is larger than the second.
+- Een negatief nummer, betekent **eerste** array is kleiner dan de 2e.
+- Een 0 betekent beide arrays gelijk.
+- Een positief nummer, betekent **eerste** array is groter dan de 2e.
 
 ### Rules
 
@@ -45,6 +45,7 @@ Dus het is niet mogelijk om een `int[]` en `String[]` te vergelijken, dat compil
 - for strings/characters, uppercase is smaller than lowercase
 
 ### Sorting in natural order
+
 - numbers
 - uppercase
 - lowercase
@@ -55,7 +56,7 @@ Dus het is niet mogelijk om een `int[]` en `String[]` te vergelijken, dat compil
 | First array       | Second array       | Result   | Reason                                                       |
 |-------------------|--------------------|----------|--------------------------------------------------------------|
 | new int[]{1, 2}   | new int[]{1}       | positive | the first element is the same, but the first array is longer |
-| new int[]{1, 2}   | new int[]{1}       | 0        | Exact match                                                  |
+| new int[]{1}      | new int[]{1}       | 0        | Exact match                                                  |
 | new String[]{"a"} | new String[]{"aa"} | negative | The first element is a substring of the second               |
 | new String[]{"a"} | new String[]{"A"}  | positive | Uppercase is smaller than lowercase                          |
 | new String[]{"a"} | new String[]{null} | positive | null is smaller than a letter                                |
@@ -70,9 +71,9 @@ import java.util.Arrays;
 
 class Example {
     public static void main(String[] args) {
-        Arrays.mismatch(new int[]{1}, new int[]{1}); // -1
-        Arrays.mismatch(new int[]{"a"}, new int[]{"A"}); // 0
-        Arrays.mismatch(new int[]{1, 2}, new int[]{1}); // 1
+        System.out.println(Arrays.mismatch(new int[]{1}, new int[]{1})); // -1
+        System.out.println(Arrays.mismatch(new int[]{"a"}, new int[]{"A"})); // 0
+        System.out.println(Arrays.mismatch(new int[]{1, 2}, new int[]{1})); // 1
     }
 }
 ```
