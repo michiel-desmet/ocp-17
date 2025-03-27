@@ -14,3 +14,23 @@ public class Main {
     }
 
 }
+
+class Animal {
+    public String sound() {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+}
+
+class Cat extends Animal {
+    @Override
+    public String sound() {
+        return "Miauw";
+    }
+}
+
+class Bird extends Animal {
+    @Override
+    public String sound() {
+        return "Chirp";
+    }
+}
