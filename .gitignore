@@ -6,8 +6,6 @@ ocp-17.iml
 .idea
 
 *.iml
-modules/**/.iml
-modules/.gradle
 
 polymorphism/.gradle
 polymorphism/build
